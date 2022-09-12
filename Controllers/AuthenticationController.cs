@@ -26,14 +26,14 @@ namespace UserManagementAPI.Controllers
         }
         public class AuthenticationRequest
         {
-            //[Required]
-            //[MinLength(3)]
-            //[MaxLength(50)]
+            [Required]
+            [MinLength(3)]
+            [MaxLength(50)]
             public string? username { get; set; }
 
-            //[Required]
-            //[MinLength(3)]
-            //[MaxLength(50)]
+            [Required]
+            [MinLength(3)]
+            [MaxLength(50)]
             public string? password { get; set; }
         }
 
